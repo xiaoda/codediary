@@ -1,7 +1,7 @@
 # codediary
 
-该项目作为个人的开发笔记，学到的、搜到的、想到的、不懂的都写在这里。
+这是小打的开发笔记（<a href="https://github.com/xiaoda/codediary/issues">Issues</a>）和代码仓库，代码片段亦会记录在<a href="https://gist.github.com/xiaoda" target="_blank">Gist</a>
 
-issue写博客，code贴代码，暂时先这样，等我学会更高级的再说。
+代码仓库目录：
 
-最后，要坚持！
+- shell 各类脚本
