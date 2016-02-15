@@ -1,0 +1,11 @@
+html, body{color: #333;}
+input{outline: none;}
+.layout{width: 500px; margin: 0 auto;}
+.text-center{text-align: center;}
+
+.search-form{line-height: 2em; padding: 5px; background-color: #ddd;}
+.search-form .input-search{margin-left: 10px; padding: 5px;}
+.ports-table{width: 100%; line-height: 2.4em; text-align: center;}
+.ports-table tr{border-bottom: 1px solid #ddd;}
+.ports-table th:first-child, .ports-table td:first-child{width: 50%;}
+.ports-table th:nth-child(2), .ports-table td:nth-child(2){width: 50%;}
