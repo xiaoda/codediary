@@ -22,16 +22,9 @@ function sortObj(obj, sort){
     if(!Object.keys(obj).length) return false;
     if(!sort) sort = 'asc';
     var keys = [];
-    var prefix = '';
     var result = {};
     for(var i in obj){
-        var tmpMatch = i.match(/\d+/);
-        if(tmpMatch){
-            if(!prefix) prefix = i.match(/^[^\d]+/)[0];
-            keys.push(Number(tmpMatch[0]));
-        }else{
-            keys.push(i);
-        }
+        keys.push(i);
     }
     switch(sort){
         case 'asc':
@@ -42,11 +35,7 @@ function sortObj(obj, sort){
             break;
     }
     for(var i in keys){
-        if(prefix){
-            result[prefix + keys[i]] = obj[prefix + keys[i]];
-        }else{
-            result[keys[i]] = obj[keys[i]];
-        }
+        result[keys[i]] = obj[keys[i]];
     }
     return result;
 }
@@ -62,10 +51,10 @@ function generatePortsData(origin){
     for(var i in origin){
         result['byName'][i] = {'port': origin[i]['port'], 'name': origin[i]['name']};
         /* 连接相同端口号软件 */
-        if(result['byPort']['p' + origin[i]['port']]){
-            result['byPort']['p' + origin[i]['port']]['name'].push(origin[i]['name']);
+        if(result['byPort'][origin[i]['port']]){
+            result['byPort'][origin[i]['port']]['name'].push(origin[i]['name']);
         }else{
-            result['byPort']['p' + origin[i]['port']] = {'name': [origin[i]['name']], 'port': origin[i]['port']};
+            result['byPort'][origin[i]['port']] = {'name': [origin[i]['name']], 'port': origin[i]['port']};
         }
     }
     for(var i in result['byPort']){
@@ -82,14 +71,14 @@ function generateTable(id, data){
     var html = '';
     data = sortObj(data);
     for(var i in data){
-        html += template.replace('{{port}}', i.match(/\d+/)[0]).replace('{{name}}', data[i]['name']);
+        html += template.replace('{{port}}', i).replace('{{name}}', data[i]['name']);
     }
     $table.find('tbody').empty().html(html);
 
     return true;
 }
 
-/* 页面初始化 */
+/* 初始化 */
 function init(){
     PORTS_DATA = generatePortsData(ORIGIN_DATA);
     RESULT.table = generateTable('portsTable', PORTS_DATA['byPort']);
@@ -101,18 +90,19 @@ $('body').on('input', '#inputSearch', function(){
     if(search){
         var data = {};
         var tmpItem;
-        tmpItem = Object.keys(PORTS_DATA['byName']);
+        var tmpRegExp = new RegExp(search.toLowerCase(), i);
         if(/^\d+$/.test(search)){ /* 匹配端口 */
             tmpItem = Object.keys(PORTS_DATA['byPort']);
             for(var i in tmpItem){
-                if(new RegExp(search).test(tmpItem[i])){
-                    data['p' + PORTS_DATA['byPort'][tmpItem[i]]['port']] = PORTS_DATA['byPort'][tmpItem[i]];
+                if(tmpRegExp.test(tmpItem[i])){
+                    data[PORTS_DATA['byPort'][tmpItem[i]]['port']] = PORTS_DATA['byPort'][tmpItem[i]];
                 }
             }
         }else{ /* 匹配名字 */
+            tmpItem = Object.keys(PORTS_DATA['byName']);
             for(var i in tmpItem){
-                if(new RegExp(search).test(tmpItem[i])){
-                    data['p' + PORTS_DATA['byName'][tmpItem[i]]['port']] = PORTS_DATA['byName'][tmpItem[i]];
+                if(tmpRegExp.test(tmpItem[i])){
+                    data[PORTS_DATA['byName'][tmpItem[i]]['port']] = PORTS_DATA['byName'][tmpItem[i]];
                 }
             }
         }
