@@ -6,7 +6,7 @@
 
 ### <a href="http://code.xiaoda.pw/page/common_ports/index.html" target="_blank">Common Ports</a>
 
-项目地址：<a href="https://github.com/xiaoda/codediary/tree/master/page/common_ports">page/common_ports</a>
+代码地址：<a href="https://github.com/xiaoda/codediary/tree/master/page/common_ports">page/common_ports</a>
 
 程序默认/常用端口查询。数据非常不全，请补充！请提意见！
 
