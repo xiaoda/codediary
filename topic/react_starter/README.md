@@ -1,6 +1,7 @@
 # Reactjs入门 & 开发准备
 
 ## 教程
+
 - React官方教程
     - <a href="http://facebook.github.io/react/docs/tutorial.html" target="_blank">英文原版教程</a>
     - <a href="http://reactjs.cn/react/docs/tutorial.html" target="_blank">中文版教程</a>
@@ -12,7 +13,9 @@
 - 其他网上教程
 
 ## 最轻量级开发环境
+
 该方式适合尝试React，实际开发环境使用Gulp+Webpack+babel
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -47,9 +50,11 @@
 ```
 
 ## 本地开发环境准备
+
 - node & npm
 
 ## <a href="http://ant.design/docs/react/introduce" target="_blank">Ant Design of React</a>: 一个基于React的开源Admin后台框架
+
 - 提供通用样式和组件，适用于自用型后台
 - 作为后台开发的参考
 
