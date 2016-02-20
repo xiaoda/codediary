@@ -1,10 +1,9 @@
 html, body{color: #333;}
+h2{margin: 50px 0; font-size: 32px; text-align: center;}
 a{color: #f60; text-decoration: none;}
 a:hover{text-decoration: underline;}
-h1, h2, .show-box{text-align: center;}
 .layout{width: 600px; margin: 0 auto;}
 .text-center{text-align: center;}
-
 .show-box{
     width: 100%;
     height: 100px;
@@ -12,6 +11,7 @@ h1, h2, .show-box{text-align: center;}
     margin-bottom: 30px;
     border: 1px solid #ddd;
     font-size: 48px;
+    text-align: center;
 }
 
 .shadow-glow{
@@ -81,4 +81,31 @@ h1, h2, .show-box{text-align: center;}
         rgba(0,0,0,.2) 0 5px 10px,
         rgba(0,0,0,.2) 0 10px 10px,
         rgba(0,0,0,.1) 0 20px 20px;
+}
+
+/* 字体颜色和背景色相同，浅色线和深色线勾勒 */
+.shadow-artistic-emboss{
+    background-color: rgb(39, 122, 79);
+    color: rgb(39, 122, 79);
+    text-shadow:
+        rgba(255, 255, 255, 0.0980392) -1px -1px 1px,
+        rgba(0, 0, 0, 0.498039) 1px 1px 1px;
+}
+
+/*一层阴影颜色和背景色相同 */
+.shadow-classic-movie{
+    background-color: rgb(255, 252, 168);
+    color: rgb(0, 89, 0);
+    text-shadow:
+        rgb(255, 252, 168) 2px 2px 0px,
+        rgb(156, 156, 156) 4px 4px 0px;
+}
+
+/* 背景和字体色差小，浅色线和深色线勾勒 */
+.shadow-emboss{
+    background-color: rgb(34, 34, 34);
+    color: rgb(51, 51, 51);
+    text-shadow:
+        rgba(255, 255, 255, 0.298039) -1px -1px 0px,
+        rgba(0, 0, 0, 0.8) 1px 1px 0px;
 }
