@@ -4,24 +4,45 @@
     <meta charset="utf-8">
     <title>Fancy Text Study</title>
     <link rel="stylesheet" type="text/css" href="../../node_modules/normalize.css/normalize.css">
+    <style type="text/css">
+        html, body{color: #333;}
+        h2{font-size: 32px; text-align: center;}
+        .layout{width: 900px; margin: 0 auto;}
+        .show-list{
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+        }
+        .show-box{
+            width: 440px;
+            height: 72px;
+            line-height: 72px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            font-size: 36px;
+            text-align: center;
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="res/study.css">
 </head>
 <body>
     <div class="layout">
-        <h2><a href="http://css3gen.com/css3-text-effects/" target="_blank">→ css3gen.com ←</a></h2>
-        <div class="show-box shadow-glow">Lamp Light Lantern 灯</div>
-        <div class="show-box shadow-neon">Neon 霓虹灯</div>
-        <div class="show-box shadow-fire">Fire Burn Hot 火焰</div>
-        <div class="show-box shadow-blur">Mistery 神秘</div>
-        <div class="show-box shadow-simple-3d">Simple 3D</div>
-        <div class="show-box shadow-realistic-3d">Realistic 3D</div>
-
-        <h2><a href="http://www.css3generator.in/text-shadow.html" target="_blank">→ www.css3generator.in ←</a></h2>
-        <div class="show-box shadow-artistic-emboss">Artistic Emboss 艺术浮雕</div>
-        <div class="show-box shadow-classic-movie">Classic Movie 经典电影</div>
-
-        <h2><a href="http://simplegang.com/tools/css-text-effect-generator/" target="_blank">→ simplegang.com ←</a></h2>
-        <div class="show-box shadow-emboss">Emboss 浮雕 凸起</div>
+        <h2>Fancy Text Study</h2>
+        <div class="show-list">
+            <div class="show-box shadow-glow">Lamp Light Lantern 灯</div>
+            <div class="show-box shadow-neon">Neon 霓虹灯</div>
+            <div class="show-box shadow-fire">Fire Burn Hot 火焰</div>
+            <div class="show-box shadow-blur">Mistery 神秘</div>
+            <div class="show-box shadow-simple-3d">Simple 3D</div>
+            <div class="show-box shadow-realistic-3d">Realistic 3D</div>
+            <div class="show-box shadow-emboss">Emboss 浮雕 凸起</div>
+            <div class="show-box shadow-artistic-emboss">Artistic Emboss 艺术浮雕</div>
+            <div class="show-box shadow-bold-sharp">Bold & Sharp 凸起</div>
+            <div class="show-box shadow-classic-movie">Classic Movie 经典电影</div>
+        </div>
     </div>
 </body>
 </html>
