@@ -4,6 +4,12 @@
 
 ## 主要项目介绍
 
+### <a href="http://code.xiaoda.pw/page/fancy_text/study.html" target="_blank">Fancy Text</a>
+
+代码地址：<a href="https://github.com/xiaoda/codediary/tree/master/page/fancy_text">page/fancy_text</a>
+
+CSS文字效果，学习中。。。
+
 ### <a href="http://code.xiaoda.pw/page/common_ports/index.html" target="_blank">Common Ports</a>
 
 代码地址：<a href="https://github.com/xiaoda/codediary/tree/master/page/common_ports">page/common_ports</a>
