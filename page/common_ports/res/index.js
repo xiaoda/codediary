@@ -1,21 +1,22 @@
 /* 原始数据 */
 var PORTS_DATA = [
-    {'name': 'Apache', 'port': 80},
-    {'name': 'CouchDB', 'port': 5984},
-    {'name': 'Django', 'port': 8000},
-    {'name': 'Expressjs', 'port': 3000},
-    {'name': 'FastCGI', 'port': 9000},
-    {'name': 'Ghostjs', 'port': 2368},
-    {'name': 'Koajs', 'port': 3000},
-    {'name': 'Lighttpd', 'port': 80},
-    {'name': 'MongoDB', 'port': 27017},
-    {'name': 'MySQL', 'port': 3306},
-    {'name': 'Nginx', 'port': 80},
-    {'name': 'Oracle', 'port': 1521},
-    {'name': 'Redis', 'port': 6379},
-    {'name': 'Ruby on Rails', 'port': 3000},
-    {'name': 'SQL Server', 'port': 1433},
-    {'name': 'SSDB', 'port': 8888},
+    {name: 'Apache', port: 80},
+    {name: 'CouchDB', port: 5984},
+    {name: 'Django', port: 8000},
+    {name: 'Expressjs', port: 3000},
+    {name: 'FastCGI', port: 9000},
+    {name: 'Ghostjs', port: 2368},
+    {name: 'Koajs', port: 3000},
+    {name: 'Lighttpd', port: 80},
+    {name: 'MongoDB', port: 27017},
+    {name: 'Meteor', port: 3000},
+    {name: 'MySQL', port: 3306},
+    {name: 'Nginx', port: 80},
+    {name: 'Oracle', port: 1521},
+    {name: 'Redis', port: 6379},
+    {name: 'Ruby on Rails', port: 3000},
+    {name: 'SQL Server', port: 1433},
+    {name: 'SSDB', port: 8888},
 ];
 var RESULT = {
     table: false,
@@ -33,7 +34,7 @@ function generateTable(id, data){
         for(var j in tableData[i]){
             tmpNames.push(tableData[i][j]['name']);
         }
-        html += template.replace('{{port}}', i).replace('{{name}}', tmpNames.join(','));
+        html += template.replace('{{port}}', i).replace('{{name}}', tmpNames.join(' , '));
     }
     $table.find('tbody').empty().html(html);
 
