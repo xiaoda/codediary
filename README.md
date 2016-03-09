@@ -1,12 +1,12 @@
 # Codediary
 
-随手记下码农路上的风景。<a href="https://github.com/xiaoda/codediary/issues">Issues</a>写笔记，<a href="https://gist.github.com/xiaoda" target="_blank">Gist</a>贴代码。
+随手记下码农路上的风景。<a href="https://github.com/xiaoda/codediary/issues">Issues</a>写笔记，<a href="https://gist.github.com/xiaoda" target="_blank">Gist</a>贴代码
 
-## 主要项目介绍
+## 主要项目一览
 
 ### <a href="http://code.xiaoda.pw/page/angular_lazyload/index.html" target="_blank">Angularjs1.x Lazyload</a>
 代码地址：<a href="https://github.com/xiaoda/codediary/tree/master/page/angular_lazyload">page/angular_lazyload</a><br>
-官方文档考证内容：<a href="https://github.com/xiaoda/codediary/issues/44">Angularjs1.x about Asynchronous Loading</a><br>
+官方文档考证：<a href="https://github.com/xiaoda/codediary/issues/44">Angularjs1.x about Asynchronous Loading</a><br>
 Angularjs1.x按需加载模块的轻量级实现
 
 ### <a href="https://github.com/xiaoda/codediary/tree/master/topic/react_starter">React Starter</a>
