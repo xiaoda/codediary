@@ -1,6 +1,6 @@
 var app = angular.module ('app', ['ngRoute']);
 
-app.config(function($provide, $routeProvider, $controllerProvider, $compileProvider){
+app.config(function($provide, $routeProvider, $controllerProvider, $filterProvider, $compileProvider){
 
     var scriptCollection = [];
 
@@ -62,8 +62,10 @@ app.config(function($provide, $routeProvider, $controllerProvider, $compileProvi
         });
 
     app.components = {
-        controller: $controllerProvider.register,
+        factory: $provide.factory,
         service: $provide.service,
-        directive: $compileProvider.directive
+        controller: $controllerProvider.register,
+        filter: $filterProvider.register,
+        directive: $compileProvider.directive,
     }
 });
