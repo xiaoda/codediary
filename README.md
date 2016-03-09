@@ -13,6 +13,7 @@ Angularjs1.x按需加载模块的轻量级实现
 ### <a href="https://github.com/xiaoda/codediary/tree/master/topic/react_starter">React Starter</a>
 
 React入门套装，内容包括：
+
 1. 教程
 2. 最轻量级开发环境
 3. 本地开发环境准备
