@@ -58,7 +58,7 @@ app.config(function($provide, $routeProvider, $controllerProvider, $compileProvi
             resolve: loader(['controllers/bar'])
         })
         .otherwise({
-            redirectTo: document.location.pathname
+            redirectTo: '/'
         });
 
     app.components = {
