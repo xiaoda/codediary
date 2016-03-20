@@ -1,7 +1,5 @@
 # 前端技术培训内容
 
-以下内容参考<a href="https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions/Questions-and-Answers" target="_blank">《前端开发面试题》</a>，主要选取能实实在在地提升前端技术能力并用于前端开发工作的内容。
-
 ## CSS
 
 - CSS盒子模型
