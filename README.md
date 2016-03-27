@@ -18,10 +18,6 @@ React入门套装，内容包括：
 3. 本地开发环境准备
 4. 一个基于React的开源Admin后台框架
 
-### [前端技术培训内容](https://github.com/xiaoda/codediary/tree/master/topic/frontend_tutorial)
-
-以实用性知识为主，快速掌握前端基础知识
-
 ### [Common Ports](http://code.xiaoda.pw/page/common_ports/index.html)
 
 代码地址：[page/common_ports](https://github.com/xiaoda/codediary/tree/master/page/common_ports)  
@@ -30,4 +26,4 @@ React入门套装，内容包括：
 ### [Fancy Text](http://code.xiaoda.pw/page/fancy_text/study.html)
 
 代码地址：[page/fancy_text](https://github.com/xiaoda/codediary/tree/master/page/fancy_text)  
-酷酷的css文字效果，学习中...
+酷酷的css文字效果
