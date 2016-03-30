@@ -2,27 +2,29 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Fancy Text Study</title>
+    <title>Cool Text</title>
     <link rel="stylesheet" type="text/css" href="../../node_modules/normalize.css/normalize.css">
     <style type="text/css">
-        html, body{color: #333;}
-        h2{font-size: 32px; text-align: center;}
+        html, body{color: #333; font-family: Helvetica;}
+        h2{font-size: 36px; text-align: center;}
         .layout{width: 900px; margin: 0 auto;}
         .show-list{
-            display: -webkit-flex;
             display: flex;
-            -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
-            -webkit-justify-content: space-between;
             justify-content: space-between;
         }
         .show-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 440px;
-            height: 72px;
-            line-height: 72px;
+            height: 112px;
+            line-height: 56px;
             margin-bottom: 20px;
+            padding: 12px 0;
             border: 1px solid #ddd;
-            font-size: 36px;
+            border-radius: 4px;
+            font-size: 42px;
             text-align: center;
         }
     </style>
@@ -30,18 +32,18 @@
 </head>
 <body>
     <div class="layout">
-        <h2>Fancy Text Study</h2>
+        <h2>isn't it cool ?</h2>
         <div class="show-list">
-            <div class="show-box shadow-glow">Lamp Light Lantern 灯</div>
-            <div class="show-box shadow-neon">Neon 霓虹灯</div>
-            <div class="show-box shadow-fire">Fire Burn Hot 火焰</div>
-            <div class="show-box shadow-blur">Mistery 神秘</div>
-            <div class="show-box shadow-simple-3d">Simple 3D</div>
-            <div class="show-box shadow-realistic-3d">Realistic 3D</div>
-            <div class="show-box shadow-emboss">Emboss 浮雕 凸起</div>
-            <div class="show-box shadow-artistic-emboss">Artistic Emboss 艺术浮雕</div>
-            <div class="show-box shadow-bold-sharp">Bold & Sharp 凸起</div>
-            <div class="show-box shadow-classic-movie">Classic Movie 经典电影</div>
+            <div class="show-box shadow-glow">Lantern Light<br>明灯 暖光</div>
+            <div class="show-box shadow-neon">24 hours !<br>Neon 霓虹灯</div>
+            <div class="show-box shadow-fire">Fire Burn Hot<br>燃烧 青春</div>
+            <div class="show-box shadow-blur">Mistery Limbo<br>地狱边境</div>
+            <div class="show-box shadow-simple-3d">Simple Clear<br>简单 简明</div>
+            <div class="show-box shadow-realistic-3d">Model Toy<br>模型 玩具</div>
+            <div class="show-box shadow-emboss">Sculpture Outline<br>雕塑 轮廓</div>
+            <div class="show-box shadow-artistic-emboss">Slight Appear<br>淡淡的 浮现</div>
+            <div class="show-box shadow-bold-sharp">Deep Impress<br>深深的 印象</div>
+            <div class="show-box shadow-classic-movie">Classic Childhood<br>经典 童年</div>
         </div>
     </div>
 </body>
