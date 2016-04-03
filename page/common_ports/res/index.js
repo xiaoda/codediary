@@ -6,6 +6,7 @@ var PORTS_DATA = [
     {name: 'Expressjs', port: 3000},
     {name: 'FastCGI', port: 9000},
     {name: 'Ghostjs', port: 2368},
+    {name: 'Jekyll', port: 4000},
     {name: 'Koajs', port: 3000},
     {name: 'Lighttpd', port: 80},
     {name: 'MongoDB', port: 27017},
