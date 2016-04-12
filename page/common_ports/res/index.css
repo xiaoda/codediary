@@ -9,3 +9,4 @@ input{outline: none;}
 .ports-table tr{border-bottom: 1px solid #ddd;}
 .ports-table th:first-child, .ports-table td:first-child{width: 40%;}
 .ports-table th:nth-child(2), .ports-table td:nth-child(2){width: 60%; word-wrap: break-word; word-break: normal;}
+.ports-table .hit{color: #f00;}
