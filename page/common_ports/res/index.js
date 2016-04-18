@@ -8,6 +8,8 @@ var PORTS_DATA = [
     {name: 'FTP', port: 20},
     {name: 'FTP', port: 21},
     {name: 'Ghostjs', port: 2368},
+    {name: 'HTTP', port: 80},
+    {name: 'HTTPS', port: 443},
     {name: 'Jekyll', port: 4000},
     {name: 'Koajs', port: 3000},
     {name: 'Lighttpd', port: 80},
